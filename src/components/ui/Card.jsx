@@ -14,10 +14,10 @@ const Card = ( {padding = 'md', shadow = 'md', bordered = false, hoverable = fal
     const getShadowClasses = (shadow) => {
     return {
             'none': '',
-            'sm': 'shadow-sm',
-            'md': 'shadow-md',
-            'lg': 'shadow-lg'
-        }[shadow] || 'shadow-md';
+            'sm': 'shadow-sm shadow-black/40',
+            'md': 'shadow-md shadow-black/40',
+            'lg': 'shadow-lg shadow-black/50'
+        }[shadow] || 'shadow-md shadow-black/40';
     }
 
     const getVariantClasses = (variant) => {
