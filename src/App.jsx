@@ -2,6 +2,8 @@ import { BrowserRouter } from "react-router"
 import NavBar from "./components/layout/NavBar"
 import Card from "./components/ui/Card"
 
+import Footer from "./components/layout/Footer"
+
 
 const App = () => {
   return (
@@ -26,6 +28,9 @@ const App = () => {
         </Card>
         
       </div>
+
+
+      <Footer />
 
 
     </BrowserRouter>
