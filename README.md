@@ -602,3 +602,77 @@ Gracias a todo el equipo por su dedicación y esfuerzo en este proyecto.
 **¡Happy Coding!** 🚀
 
 Si tienes dudas, consulta con Agustín o revisa la documentación oficial de las tecnologías que estamos usando.
+
+# Componentes Usos
+
+## Input
+
+```js
+import Input from "./components/ui/Input"
+import { FiMail, FiUser } from "react-icons/fi"
+
+      <div className="space-y-6 max-w-md">
+        <h2 className="text-2xl font-bold text-white">Pruebas de Input</h2>
+
+        {/* Input básico */}
+        <Input 
+          label="Nombre"
+          placeholder="Ingresa tu nombre"
+        />
+
+        {/* Input con ícono */}
+        <Input 
+          label="Email"
+          type="email"
+          placeholder="ejemplo@correo.com"
+          icon={<FiMail />}
+        />
+
+        {/* Input password */}
+        <Input 
+          label="Contraseña"
+          type="password"
+          placeholder="********"
+        />
+
+        {/* Input con error */}
+        <Input 
+          label="Usuario"
+          placeholder="usuario123"
+          error="Este usuario ya existe"
+        />
+
+        {/* Input requerido con helperText */}
+        <Input 
+          label="Teléfono"
+          type="tel"
+          placeholder="+54 11 1234-5678"
+          required
+          helperText="Formato: +54 11 1234-5678"
+        />
+
+        {/* Input disabled */}
+        <Input 
+          label="Email confirmado"
+          value="usuario@ejemplo.com"
+          disabled
+        />
+
+        {/* Input con contador de caracteres */}
+        <Input 
+          label="Biografía"
+          placeholder="Cuéntanos sobre ti"
+          maxLength={100}
+          showCharCount
+        />
+
+        {/* Input número con ícono */}
+        <Input 
+          label="Edad"
+          type="number"
+          placeholder="18"
+          icon={<FiUser />}
+        />
+      </div>
+
+```
