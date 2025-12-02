@@ -676,3 +676,66 @@ import { FiMail, FiUser } from "react-icons/fi"
       </div>
 
 ```
+
+## Badge
+
+```js
+<div className="space-y-8 p-8">
+        <h2 className="text-3xl font-bold text-white mb-6">Ejemplos de Badges</h2>
+        
+        {/* Variantes básicas */}
+        <div className="space-y-2">
+          <h3 className="text-xl font-semibold text-white">Variantes</h3>
+          <div className="flex flex-wrap gap-3">
+            <Badge variant="success">Verificado</Badge>
+            <Badge variant="warning">Pendiente</Badge>
+            <Badge variant="error">Cancelado</Badge>
+            <Badge variant="info">Nueva Solicitud</Badge>
+            <Badge variant="default">Inactivo</Badge>
+          </div>
+        </div>
+
+        {/* Diferentes tamaños */}
+        <div className="space-y-2">
+          <h3 className="text-xl font-semibold text-white">Tamaños</h3>
+          <div className="flex flex-wrap items-center gap-3">
+            <Badge variant="success" size="xs">Extra Small</Badge>
+            <Badge variant="success" size="sm">Small</Badge>
+            <Badge variant="success" size="md">Medium</Badge>
+            <Badge variant="success" size="lg">Large</Badge>
+          </div>
+        </div>
+
+        {/* Con animación pulse */}
+        <div className="space-y-2">
+          <h3 className="text-xl font-semibold text-white">Con Animación Pulse</h3>
+          <div className="flex flex-wrap gap-3">
+            <Badge variant="error" pulse>¡Urgente!</Badge>
+            <Badge variant="warning" pulse>Atención</Badge>
+          </div>
+        </div>
+
+        {/* Block vs Inline */}
+        <div className="space-y-2">
+          <h3 className="text-xl font-semibold text-white">Block vs Inline</h3>
+          <Badge variant="info" block>Badge en modo Block (ocupa todo el ancho)</Badge>
+          <div className="flex flex-wrap gap-2 mt-2">
+            <Badge variant="success">Badge 1</Badge>
+            <Badge variant="warning">Badge 2</Badge>
+            <Badge variant="error">Badge 3</Badge>
+          </div>
+        </div>
+
+        {/* Casos de uso reales */}
+        <div className="space-y-2">
+          <h3 className="text-xl font-semibold text-white">Casos de Uso Reales</h3>
+          <div className="flex flex-wrap gap-2">
+            <Badge variant="success" size="sm">5K+ Profesionales</Badge>
+            <Badge variant="info" size="sm">Top Rated</Badge>
+            <Badge variant="warning" size="sm">En Progreso</Badge>
+            <Badge variant="error" size="sm">Cancelada</Badge>
+            <Badge variant="success" size="xs">✓ Verificado</Badge>
+          </div>
+        </div>
+      </div>
+```
