@@ -2,7 +2,7 @@
 
 const Footer = () => {
   return (
-    <footer className=" bottom-0 left-0 w-full py-10 px-4 bg-black/75 backdrop-blur-sm text-white">
+    <footer className="absolute bottom-end left-0 w-full py-10 px-4 bg-black/75 backdrop-blur-sm text-white">
       <div className="max-w-sm mx-auto md:max-w-4xl">
         <img
           src="/imgs/logos/wasiFixFooter.svg"

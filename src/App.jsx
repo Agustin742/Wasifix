@@ -3,6 +3,7 @@ import NavBar from "./components/layout/NavBar"
 import Card from "./components/ui/Card"
 
 import Footer from "./components/layout/Footer"
+import Badge from "./components/ui/Badge"
 
 
 const App = () => {
@@ -26,12 +27,8 @@ const App = () => {
         <Card hoverable clickable>
           <p>Card Interactiva - Pasa el mouse y haz click</p>
         </Card>
-        
       </div>
-
-
-      <Footer />
-
+    <Footer />
 
     </BrowserRouter>
   )
