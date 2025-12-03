@@ -51,14 +51,14 @@ const Button = ({
   ...rest
 }) => {
   // Estilos base del botón
-  const baseStyles = 'inline-flex items-center justify-center font-bold rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 transition-all duration-300 ease-in-out';
+  const baseStyles = 'inline-flex items-center justify-center font-semibold rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 transition-all duration-300 ease-in-out';
 
   // Estilos por variante (variant)
   const variantStyles = {
     primary: 'bg-green-600 text-white hover:bg-green-700 hover:shadow-lg focus:ring-green-500',
     secondary: 'bg-orange-500 text-white hover:bg-orange-600 hover:shadow-lg focus:ring-orange-500',
     outline: 'border-2 border-green-600 text-green-600 bg-transparent hover:bg-green-50 focus:ring-green-500',
-    ghost: 'text-green-600 bg-transparent hover:bg-green-50 focus:ring-green-500 shadow-none',
+    ghost: 'text-green-600  bg-gray-100/80 hover:bg-green-50 focus:ring-green-500 shadow-none rounded-xl',
   };
 
   // Estilos por tamaño (size)
