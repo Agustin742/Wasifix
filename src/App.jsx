@@ -4,6 +4,7 @@ import Card from "./components/ui/Card"
 
 import Footer from "./components/layout/Footer"
 import SearchBar from "./components/search/SearchBar"
+import Badge from "./components/ui/Badge"
 
 
 const App = () => {
@@ -29,10 +30,9 @@ const App = () => {
         <Card hoverable clickable>
           <p>Card Interactiva - Pasa el mouse y haz click</p>
         </Card>
-        
       </div>
+    <Footer />
 
-      <Footer />
     </BrowserRouter>
   )
 }
