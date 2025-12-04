@@ -739,3 +739,26 @@ import { FiMail, FiUser } from "react-icons/fi"
         </div>
       </div>
 ```
+
+## Modal
+
+```js
+import { useState } from "react"
+
+const [isModalOpen, setIsModalOpen] = useState(false)
+
+<div>
+  <button onClick={() => setIsModalOpen(true)}>
+    Abrir Modal
+  </button>
+
+  <Modal
+    isOpen={isModalOpen}
+    onClose={() => setIsModalOpen(false)}
+    title="Mi Primer Modal"
+    size="md"
+  >
+    <p>Contenido del modal aquí...</p>
+  </Modal>
+</div>
+```
