@@ -739,3 +739,73 @@ import { FiMail, FiUser } from "react-icons/fi"
         </div>
       </div>
 ```
+
+## Modal
+
+```js
+import { useState } from "react"
+
+const [isModalOpen, setIsModalOpen] = useState(false)
+
+<div>
+  <button onClick={() => setIsModalOpen(true)}>
+    Abrir Modal
+  </button>
+
+  <Modal
+    isOpen={isModalOpen}
+    onClose={() => setIsModalOpen(false)}
+    title="Mi Primer Modal"
+    size="md"
+  >
+    <p>Contenido del modal aquí...</p>
+  </Modal>
+</div>
+```
+
+## ServiceCarousel
+
+```js
+<div className="w-1/3 m-auto">
+          {/* // Sin auto-play */}
+          <ServicesCarrousel 
+            items={mockServices}
+            renderItem={(item) => <ServiceCard {...item} />}
+          />
+          
+          {/* // Con auto-play */}
+          <ServicesCarrousel
+            items={mockServices}
+            renderItem={(item) => <ServiceCard {...item} />}
+            autoPlay={true}
+            interval={5000}
+          />
+          
+          {/* // Difer slides per view */}
+          <ServicesCarrousel 
+            items={mockServices}
+            renderItem={(item) => <ServiceCard {...item} />}
+            slidesPerView={{ mobile: 1, tablet: 3, desktop: 4 }}
+          />
+           {/* // Sin auto-play */}
+          <ServicesCarrousel 
+            items={mockServices}
+            renderItem={(item) => <ServiceCard {...item} />}
+          />
+          
+          {/* // Con auto-play */}
+          <ServicesCarrousel 
+            items={mockServices}
+            renderItem={(item) => <ServiceCard {...item} />}
+            autoPlay={true}
+            interval={5000}
+          />
+          
+          {/* // Diferentes slides per view */}
+          <ServicesCarrousel 
+            items={mockServices}
+            renderItem={(item) => <ServiceCard {...item} />}
+            slidesPerView={{ mobile: 1, tablet: 3, desktop: 4 }}
+          />
+        </div>
+```
