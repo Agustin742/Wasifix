@@ -762,3 +762,50 @@ const [isModalOpen, setIsModalOpen] = useState(false)
   </Modal>
 </div>
 ```
+
+## ServiceCarousel
+
+```js
+<div className="w-1/3 m-auto">
+          {/* // Sin auto-play */}
+          <ServicesCarrousel 
+            items={mockServices}
+            renderItem={(item) => <ServiceCard {...item} />}
+          />
+          
+          {/* // Con auto-play */}
+          <ServicesCarrousel
+            items={mockServices}
+            renderItem={(item) => <ServiceCard {...item} />}
+            autoPlay={true}
+            interval={5000}
+          />
+          
+          {/* // Difer slides per view */}
+          <ServicesCarrousel 
+            items={mockServices}
+            renderItem={(item) => <ServiceCard {...item} />}
+            slidesPerView={{ mobile: 1, tablet: 3, desktop: 4 }}
+          />
+           {/* // Sin auto-play */}
+          <ServicesCarrousel 
+            items={mockServices}
+            renderItem={(item) => <ServiceCard {...item} />}
+          />
+          
+          {/* // Con auto-play */}
+          <ServicesCarrousel 
+            items={mockServices}
+            renderItem={(item) => <ServiceCard {...item} />}
+            autoPlay={true}
+            interval={5000}
+          />
+          
+          {/* // Diferentes slides per view */}
+          <ServicesCarrousel 
+            items={mockServices}
+            renderItem={(item) => <ServiceCard {...item} />}
+            slidesPerView={{ mobile: 1, tablet: 3, desktop: 4 }}
+          />
+        </div>
+```
