@@ -602,3 +602,210 @@ Gracias a todo el equipo por su dedicación y esfuerzo en este proyecto.
 **¡Happy Coding!** 🚀
 
 Si tienes dudas, consulta con Agustín o revisa la documentación oficial de las tecnologías que estamos usando.
+
+# Componentes Usos
+
+## Input
+
+```js
+import Input from "./components/ui/Input"
+import { FiMail, FiUser } from "react-icons/fi"
+
+      <div className="space-y-6 max-w-md">
+        <h2 className="text-2xl font-bold text-white">Pruebas de Input</h2>
+
+        {/* Input básico */}
+        <Input 
+          label="Nombre"
+          placeholder="Ingresa tu nombre"
+        />
+
+        {/* Input con ícono */}
+        <Input 
+          label="Email"
+          type="email"
+          placeholder="ejemplo@correo.com"
+          icon={<FiMail />}
+        />
+
+        {/* Input password */}
+        <Input 
+          label="Contraseña"
+          type="password"
+          placeholder="********"
+        />
+
+        {/* Input con error */}
+        <Input 
+          label="Usuario"
+          placeholder="usuario123"
+          error="Este usuario ya existe"
+        />
+
+        {/* Input requerido con helperText */}
+        <Input 
+          label="Teléfono"
+          type="tel"
+          placeholder="+54 11 1234-5678"
+          required
+          helperText="Formato: +54 11 1234-5678"
+        />
+
+        {/* Input disabled */}
+        <Input 
+          label="Email confirmado"
+          value="usuario@ejemplo.com"
+          disabled
+        />
+
+        {/* Input con contador de caracteres */}
+        <Input 
+          label="Biografía"
+          placeholder="Cuéntanos sobre ti"
+          maxLength={100}
+          showCharCount
+        />
+
+        {/* Input número con ícono */}
+        <Input 
+          label="Edad"
+          type="number"
+          placeholder="18"
+          icon={<FiUser />}
+        />
+      </div>
+
+```
+
+## Badge
+
+```js
+<div className="space-y-8 p-8">
+        <h2 className="text-3xl font-bold text-white mb-6">Ejemplos de Badges</h2>
+        
+        {/* Variantes básicas */}
+        <div className="space-y-2">
+          <h3 className="text-xl font-semibold text-white">Variantes</h3>
+          <div className="flex flex-wrap gap-3">
+            <Badge variant="success">Verificado</Badge>
+            <Badge variant="warning">Pendiente</Badge>
+            <Badge variant="error">Cancelado</Badge>
+            <Badge variant="info">Nueva Solicitud</Badge>
+            <Badge variant="default">Inactivo</Badge>
+          </div>
+        </div>
+
+        {/* Diferentes tamaños */}
+        <div className="space-y-2">
+          <h3 className="text-xl font-semibold text-white">Tamaños</h3>
+          <div className="flex flex-wrap items-center gap-3">
+            <Badge variant="success" size="xs">Extra Small</Badge>
+            <Badge variant="success" size="sm">Small</Badge>
+            <Badge variant="success" size="md">Medium</Badge>
+            <Badge variant="success" size="lg">Large</Badge>
+          </div>
+        </div>
+
+        {/* Con animación pulse */}
+        <div className="space-y-2">
+          <h3 className="text-xl font-semibold text-white">Con Animación Pulse</h3>
+          <div className="flex flex-wrap gap-3">
+            <Badge variant="error" pulse>¡Urgente!</Badge>
+            <Badge variant="warning" pulse>Atención</Badge>
+          </div>
+        </div>
+
+        {/* Block vs Inline */}
+        <div className="space-y-2">
+          <h3 className="text-xl font-semibold text-white">Block vs Inline</h3>
+          <Badge variant="info" block>Badge en modo Block (ocupa todo el ancho)</Badge>
+          <div className="flex flex-wrap gap-2 mt-2">
+            <Badge variant="success">Badge 1</Badge>
+            <Badge variant="warning">Badge 2</Badge>
+            <Badge variant="error">Badge 3</Badge>
+          </div>
+        </div>
+
+        {/* Casos de uso reales */}
+        <div className="space-y-2">
+          <h3 className="text-xl font-semibold text-white">Casos de Uso Reales</h3>
+          <div className="flex flex-wrap gap-2">
+            <Badge variant="success" size="sm">5K+ Profesionales</Badge>
+            <Badge variant="info" size="sm">Top Rated</Badge>
+            <Badge variant="warning" size="sm">En Progreso</Badge>
+            <Badge variant="error" size="sm">Cancelada</Badge>
+            <Badge variant="success" size="xs">✓ Verificado</Badge>
+          </div>
+        </div>
+      </div>
+```
+
+## Modal
+
+```js
+import { useState } from "react"
+
+const [isModalOpen, setIsModalOpen] = useState(false)
+
+<div>
+  <button onClick={() => setIsModalOpen(true)}>
+    Abrir Modal
+  </button>
+
+  <Modal
+    isOpen={isModalOpen}
+    onClose={() => setIsModalOpen(false)}
+    title="Mi Primer Modal"
+    size="md"
+  >
+    <p>Contenido del modal aquí...</p>
+  </Modal>
+</div>
+```
+
+## ServiceCarousel
+
+```js
+<div className="w-1/3 m-auto">
+          {/* // Sin auto-play */}
+          <ServicesCarrousel 
+            items={mockServices}
+            renderItem={(item) => <ServiceCard {...item} />}
+          />
+          
+          {/* // Con auto-play */}
+          <ServicesCarrousel
+            items={mockServices}
+            renderItem={(item) => <ServiceCard {...item} />}
+            autoPlay={true}
+            interval={5000}
+          />
+          
+          {/* // Difer slides per view */}
+          <ServicesCarrousel 
+            items={mockServices}
+            renderItem={(item) => <ServiceCard {...item} />}
+            slidesPerView={{ mobile: 1, tablet: 3, desktop: 4 }}
+          />
+           {/* // Sin auto-play */}
+          <ServicesCarrousel 
+            items={mockServices}
+            renderItem={(item) => <ServiceCard {...item} />}
+          />
+          
+          {/* // Con auto-play */}
+          <ServicesCarrousel 
+            items={mockServices}
+            renderItem={(item) => <ServiceCard {...item} />}
+            autoPlay={true}
+            interval={5000}
+          />
+          
+          {/* // Diferentes slides per view */}
+          <ServicesCarrousel 
+            items={mockServices}
+            renderItem={(item) => <ServiceCard {...item} />}
+            slidesPerView={{ mobile: 1, tablet: 3, desktop: 4 }}
+          />
+        </div>
+```
