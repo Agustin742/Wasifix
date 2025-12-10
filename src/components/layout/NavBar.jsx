@@ -59,6 +59,7 @@ const NavBar = () => {
     
 
   return (
+    <>
     <div 
     id="navbar"
     className={`w-full min-h-[150px] backdrop-blur-sm flex items-center justify-between md:px-16 sm:px-10 px-4 fixed top-0 tracking-all ease-in-out duration-300 z-50 border-b border-neutral-600 ${isScrolled ? 'bg-black/70 backdrop-blur-lg' : 'bg-black/80 backdrop-blur-sm'}`}
@@ -153,6 +154,8 @@ const NavBar = () => {
 
         </div>
     </div>
+    <div className="h-[150px]"></div> {/* <<---- si no pongo esto rompe todo el navbar xd  */}
+    </>
   )
 }
 
