@@ -128,7 +128,7 @@ const SearchBar = ({ onSearch }) => {
 
     
       <div className="mt-6 flex flex-wrap items-center gap-2">
-        <span className="text-sm font-medium text-white mr-2">Populares:</span>
+        <span className="text-sm font-medium text-gray-700 mr-2">Populares:</span>
         {popularServices.map((tag) => (
           <div className="bg-[#C5E5D8]  rounded-full" >
             <Button 
