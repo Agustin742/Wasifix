@@ -6,6 +6,7 @@ import HomePage from "./pages/home/HomePage"
 const App = () => {
 
 
+
   return (
     <BrowserRouter>
     <NavBar />
