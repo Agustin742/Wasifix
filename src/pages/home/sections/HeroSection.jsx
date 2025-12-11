@@ -30,7 +30,7 @@ const HeroSection = () => {
 
   return (
     <section 
-      className="relative h-screen w-full flex items-center justify-center text-white"
+      className="relative h-[500px] w-full flex items-center justify-center text-white mb-50"
       // La imagen de fondo se define aquí. Asegúrate de que la ruta sea correcta.
       
     >
