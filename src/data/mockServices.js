@@ -17,17 +17,17 @@ export const mockServices = [
   {
     id: 1,
     name: "Electricidad",
-    description: "Instalaciones, reparaciones y mantenimiento eléctrico profesional",
+    description: "Servicio integral de instalación, reparación y mantenimiento eléctrico para hogares y comercios. Incluye cableado, tableros, iluminación y detección de fallas, garantizando seguridad, eficiencia y cumplimiento de normas vigentes.",
     icon: FaBolt,
     rating: 4.8,
     reviewsCount: 234,
     priceFrom: 1500,
-    professionals: 45
+    professionals: 45,
   },
   {
     id: 2,
     name: "Plomería",
-    description: "Solución de filtraciones, destapes y instalaciones sanitarias",
+    description: "Solución completa para pérdidas, cañerías tapadas, instalaciones nuevas y mantenimiento de agua fría y caliente. Trabajo preciso, diagnóstico rápido y reparación duradera para evitar daños y garantizar correcto funcionamiento.",
     icon: FaWrench,
     rating: 4.7,
     reviewsCount: 189,
@@ -37,7 +37,7 @@ export const mockServices = [
   {
     id: 3,
     name: "Pintura",
-    description: "Pintura interior y exterior, acabados profesionales",
+    description: "Aplicación de pintura interior y exterior con preparación profesional de superficies. Mejora estética, protección contra humedad y acabado duradero. Incluye reparaciones menores y asesoramiento sobre colores y materiales adecuados.",
     icon: FaPaintRoller,
     rating: 4.6,
     reviewsCount: 156,
@@ -47,7 +47,7 @@ export const mockServices = [
   {
     id: 4,
     name: "Gasista",
-    description: "Instalación y reparación de gas, calefones y estufas",
+    description: "Instalación, reparación y mantenimiento de artefactos y cañerías de gas. Pruebas de hermeticidad, habilitaciones y detección segura de fugas. Trabajo certificado para cumplir con normativas y asegurar máxima seguridad.",
     icon: FaFire,
     rating: 4.9,
     reviewsCount: 142,
@@ -57,7 +57,7 @@ export const mockServices = [
   {
     id: 5,
     name: "Carpintería",
-    description: "Muebles a medida, reparaciones y trabajos en madera",
+    description: "Fabricación, ajuste y reparación de muebles, puertas, marcos y estructuras de madera. Acabados prolijos, adaptados a medida y con materiales de calidad, asegurando durabilidad y estética acorde al espacio.",
     icon: FaHammer,
     rating: 4.7,
     reviewsCount: 198,
@@ -67,71 +67,11 @@ export const mockServices = [
   {
     id: 6,
     name: "Albañilería",
-    description: "Construcción, reformas y reparaciones de mampostería",
+    description: "Construcción y reparación de paredes, revoques, pisos y estructuras menores. Trabajo sólido, prolijo y resistente, ideal para reformas, ampliaciones o mantenimiento general, garantizando soluciones duraderas y profesionales.",
     icon: FaHardHat,
     rating: 4.5,
     reviewsCount: 167,
     priceFrom: 5000,
     professionals: 41
-  },
-  {
-    id: 7,
-    name: "Cerrajería",
-    description: "Apertura de puertas, cambio de cerraduras y llaves",
-    icon: FaKey,
-    rating: 4.8,
-    reviewsCount: 223,
-    priceFrom: 1800,
-    professionals: 31
-  },
-  {
-    id: 8,
-    name: "Refrigeración",
-    description: "Instalación y reparación de aires acondicionados",
-    icon: FaSnowflake,
-    rating: 4.6,
-    reviewsCount: 178,
-    priceFrom: 3000,
-    professionals: 26
-  },
-  {
-    id: 9,
-    name: "Limpieza",
-    description: "Limpieza profunda de hogares y oficinas",
-    icon: FaBroom,
-    rating: 4.7,
-    reviewsCount: 312,
-    priceFrom: 2500,
-    professionals: 67
-  },
-  {
-    id: 10,
-    name: "Jardinería",
-    description: "Mantenimiento de jardines y espacios verdes",
-    icon: FaLeaf,
-    rating: 4.5,
-    reviewsCount: 145,
-    priceFrom: 2800,
-    professionals: 22
-  },
-  {
-    id: 11,
-    name: "Mudanzas",
-    description: "Servicio completo de mudanzas y fletes",
-    icon: FaTruck,
-    rating: 4.4,
-    reviewsCount: 134,
-    priceFrom: 8000,
-    professionals: 19
-  },
-  {
-    id: 12,
-    name: "Reparaciones",
-    description: "Reparaciones generales del hogar",
-    icon: FaTools,
-    rating: 4.6,
-    reviewsCount: 201,
-    priceFrom: 1200,
-    professionals: 58
   }
 ]
