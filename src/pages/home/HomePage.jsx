@@ -5,6 +5,7 @@ import HeroSection from "./sections/HeroSection"
 import HowItWorksSection from "./sections/HowItWorksSection"
 import ContactSection from "./sections/ContactSection"
 import SearchSection from "./sections/SearchSection"
+import ServicesSection from "./sections/ServicesSection"
 
 
 const HomePage = () => {
@@ -14,6 +15,7 @@ const HomePage = () => {
 
       <HeroSection />
       <SearchSection />
+      <ServicesSection />
       <CTASection />
       <HowItWorksSection />
       <ContactSection />
